@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A free English MCQ practice website with 100,000 generated questions. No registration required." />
+  <meta name="theme-color" content="#0f172a" />
+  <title>EnglishArena — Free English MCQ Tests</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-glow page-glow-one"></div>
+  <div class="page-glow page-glow-two"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="EnglishArena home">
+      <span class="brand-mark">EA</span>
+      <span>
+        <strong>EnglishArena</strong>
+        <small>Practice. Improve. Succeed.</small>
+      </span>
+    </a>
+    <nav class="top-nav" aria-label="Main navigation">
+      <a href="#practice">Practice</a>
+      <a href="#features">Features</a>
+      <a href="#progress">My Progress</a>
+    </nav>
+    <button class="ghost-button" id="headerStartButton" type="button">Start a Test</button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <span class="eyebrow">100% free • no account needed</span>
+        <h1>Master English with <span>100,000 MCQs</span></h1>
+        <p>
+          Practice grammar, vocabulary, synonyms, antonyms, spelling, articles,
+          prepositions, and tenses through fast, mobile-friendly tests.
+        </p>
+        <div class="hero-actions">
+          <button class="primary-button" id="heroStartButton" type="button">
+            Start Free Practice
+          </button>
+          <a class="secondary-link" href="#features">See how it works</a>
+        </div>
+        <div class="trust-row">
+          <span>✓ Instant results</span>
+          <span>✓ Answer explanations</span>
+          <span>✓ Local progress tracking</span>
+        </div>
+      </div>
+
+      <div class="hero-card" aria-label="Quiz preview">
+        <div class="preview-header">
+          <span class="preview-badge">Live Preview</span>
+          <span>Question 7 of 20</span>
+        </div>
+        <div class="preview-progress"><span></span></div>
+        <p class="preview-label">VOCABULARY</p>
+        <h2>Choose the word closest in meaning to “brief”.</h2>
+        <div class="preview-options">
+          <div>A. lengthy</div>
+          <div class="selected">B. concise <span>✓</span></div>
+          <div>C. distant</div>
+          <div>D. careless</div>
+        </div>
+        <div class="preview-footer">
+          <span>Score: 6</span>
+          <button type="button" tabindex="-1">Next →</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="stat-strip" aria-label="Website statistics">
+      <article><strong>100,000</strong><span>Generated MCQs</span></article>
+      <article><strong>8</strong><span>Practice Categories</span></article>
+      <article><strong>3</strong><span>Difficulty Levels</span></article>
+      <article><strong>0</strong><span>Registration Required</span></article>
+    </section>
+
+    <section class="practice-section" id="practice">
+      <div class="section-heading">
+        <span class="eyebrow">Build your test</span>
+        <h2>Choose what you want to practice</h2>
+        <p>Your questions are generated instantly in the browser.</p>
+      </div>
+
+      <div class="app-shell">
+        <section class="screen active" id="setupScreen" aria-labelledby="setupTitle">
+          <div class="setup-grid">
+            <div class="setup-main">
+              <h3 id="setupTitle">Create a new quiz</h3>
+
+              <fieldset class="field-group">
+                <legend>Category</legend>
+                <div class="choice-grid category-grid" id="categoryChoices">
+                  <label class="choice-card selected">
+                    <input type="radio" name="category" value="mixed" checked />
+                    <span class="choice-icon">✦</span>
+                    <span><strong>Mixed Test</strong><small>All topics together</small></span>
+                  </label>
+                  <label class="choice-card">
+                    <input type="radio" name="category" value="grammar" />
+                    <span class="choice-icon">G</span>
+                    <span><strong>Grammar</strong><small>Usage and structure</small></span>
+                  </label>
+                  <label class="choice-card">
+                    <input type="radio" name="category" value="vocabulary" />
+                    <span class="choice-icon">V</span>
+                    <span><strong>Vocabulary</strong><small>Words and meanings</small></span>
+                  </label>
+                  <label class="choice-card">
+                    <input type="radio" name="category" value="synonyms" />
+                    <span class="choice-icon">S</span>
+                    <span><strong>Synonyms</strong><small>Similar meanings</small></span>
+                  </label>
+                  <label class="choice-card">
+                    <input type="radio" name="category" value="antonyms" />
+                    <span class="choice-icon">A</span>
+                    <span><strong>Antonyms</strong><small>Opposite meanings</small></span>
+                  </label>
+                  <label class="choice-card">
+                    <input type="radio" name="category" value="spelling" />
+                    <span class="choice-icon">✎</span>
+                    <span><strong>Spelling</strong><small>Correct word forms</small></span>
+                  </label>
+                  <label class="choice-card">
+                    <input type="radio" name="category" value="prepositions" />
+                    <span class="choice-icon">P</span>
+                    <span><strong>Prepositions</strong><small>Correct relationships</small></span>
+                  </label>
+                  <label class="choice-card">
+                    <input type="radio" name="category" value="tenses" />
+                    <span class="choice-icon">T</span>
+                    <span><strong>Tenses</strong><small>Time and verb forms</small></span>
+                  </label>
+                </div>
+              </fieldset>
+
+              <div class="two-column-fields">
+                <fieldset class="field-group">
+                  <legend>Difficulty</legend>
+                  <div class="segmented-control" id="difficultyChoices">
+                    <label><input type="radio" name="difficulty" value="easy" checked /><span>Easy</span></label>
+                    <label><input type="radio" name="difficulty" value="medium" /><span>Medium</span></label>
+                    <label><input type="radio" name="difficulty" value="hard" /><span>Hard</span></label>
+                  </div>
+                </fieldset>
+
+                <fieldset class="field-group">
+                  <legend>Questions</legend>
+                  <div class="segmented-control" id="countChoices">
+                    <label><input type="radio" name="questionCount" value="10" checked /><span>10</span></label>
+                    <label><input type="radio" name="questionCount" value="20" /><span>20</span></label>
+                    <label><input type="radio" name="questionCount" value="50" /><span>50</span></label>
+                  </div>
+                </fieldset>
+              </div>
+
+              <fieldset class="field-group">
+                <legend>Timer</legend>
+                <div class="segmented-control timer-control" id="timerChoices">
+                  <label><input type="radio" name="timer" value="0" checked /><span>No timer</span></label>
+                  <label><input type="radio" name="timer" value="600" /><span>10 minutes</span></label>
+                  <label><input type="radio" name="timer" value="1200" /><span>20 minutes</span></label>
+                </div>
+              </fieldset>
+
+              <button class="primary-button full-width" id="startQuizButton" type="button">
+                Generate My Quiz
+              </button>
+            </div>
+
+            <aside class="setup-summary">
+              <span class="summary-kicker">Your browser progress</span>
+              <div class="summary-score">
+                <strong id="savedBestScore">0%</strong>
+                <span>Best score</span>
+              </div>
+              <div class="summary-stats">
+                <div><strong id="savedTests">0</strong><span>Tests completed</span></div>
+                <div><strong id="savedAnswered">0</strong><span>Questions answered</span></div>
+              </div>
+              <p>
+                Progress is saved on this device only. Clearing browser data will remove it.
+              </p>
+            </aside>
+          </div>
+        </section>
+
+        <section class="screen" id="quizScreen" aria-labelledby="questionText">
+          <div class="quiz-toolbar">
+            <button class="text-button" id="quitButton" type="button">← Exit test</button>
+            <div class="quiz-meta">
+              <span id="quizCategoryLabel">Mixed Test</span>
+              <span id="quizDifficultyLabel">Easy</span>
+            </div>
+            <div class="timer" id="timerDisplay" aria-live="polite">No timer</div>
+          </div>
+
+          <div class="quiz-progress-row">
+            <span id="questionCounter">Question 1 of 10</span>
+            <span id="answeredCounter">0 answered</span>
+          </div>
+          <div class="quiz-progress"><span id="quizProgressBar"></span></div>
+
+          <article class="question-card">
+            <div class="question-topline">
+              <span class="question-type" id="questionType">GRAMMAR</span>
+              <button class="icon-button" id="bookmarkButton" type="button" aria-label="Bookmark question">☆</button>
+            </div>
+            <h2 id="questionText"></h2>
+            <div class="question-context hidden" id="questionContext"></div>
+            <div class="answer-list" id="answerList"></div>
+          </article>
+
+          <div class="quiz-navigation">
+            <button class="ghost-button" id="previousButton" type="button">Previous</button>
+            <button class="primary-button" id="nextButton" type="button">Next</button>
+            <button class="primary-button hidden" id="submitButton" type="button">Submit Test</button>
+          </div>
+        </section>
+
+        <section class="screen" id="resultScreen" aria-labelledby="resultTitle">
+          <div class="result-header">
+            <span class="eyebrow">Test completed</span>
+            <h2 id="resultTitle">Your result</h2>
+            <p id="resultMessage">Good effort. Review your answers and try again.</p>
+          </div>
+
+          <div class="result-grid">
+            <div class="score-ring" id="scoreRing">
+              <div><strong id="scorePercentage">0%</strong><span>Final score</span></div>
+            </div>
+            <div class="result-stat"><strong id="correctCount">0</strong><span>Correct</span></div>
+            <div class="result-stat"><strong id="incorrectCount">0</strong><span>Incorrect</span></div>
+            <div class="result-stat"><strong id="unansweredCount">0</strong><span>Unanswered</span></div>
+            <div class="result-stat"><strong id="timeTaken">0:00</strong><span>Time used</span></div>
+          </div>
+
+          <div class="result-actions">
+            <button class="primary-button" id="reviewButton" type="button">Review Answers</button>
+            <button class="ghost-button" id="newQuizButton" type="button">Create Another Quiz</button>
+          </div>
+
+          <div class="review-panel hidden" id="reviewPanel">
+            <div class="review-heading">
+              <h3>Answer review</h3>
+              <button class="text-button" id="closeReviewButton" type="button">Close review</button>
+            </div>
+            <div id="reviewList"></div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="feature-section" id="features">
+      <div class="section-heading">
+        <span class="eyebrow">Designed for practice</span>
+        <h2>Everything needed for fast revision</h2>
+      </div>
+      <div class="feature-grid">
+        <article><span>⚡</span><h3>Instant generation</h3><p>Every test is assembled in your browser from a deterministic 100,000-question bank.</p></article>
+        <article><span>🧠</span><h3>Clear explanations</h3><p>Review correct answers with short explanations after submitting a test.</p></article>
+        <article><span>📱</span><h3>Mobile friendly</h3><p>The interface works on phones, tablets, laptops, and desktop computers.</p></article>
+        <article><span>🔒</span><h3>No account</h3><p>No email, password, registration, tracking account, or server database is required.</p></article>
+        <article><span>📊</span><h3>Local progress</h3><p>Your completed test count and best score are saved privately on your device.</p></article>
+        <article><span>🌐</span><h3>Free hosting</h3><p>Deploy the files directly with GitHub Pages, Netlify, Cloudflare Pages, or any static host.</p></article>
+      </div>
+    </section>
+
+    <section class="progress-section" id="progress">
+      <div>
+        <span class="eyebrow">Private by design</span>
+        <h2>Your learning history stays in your browser</h2>
+        <p>
+          This static website has no server-side account system. Progress is stored through
+          localStorage and remains available only in the same browser unless browser data is cleared.
+        </p>
+      </div>
+      <button class="danger-button" id="resetProgressButton" type="button">Reset My Local Progress</button>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="brand footer-brand">
+      <span class="brand-mark">EA</span>
+      <span><strong>EnglishArena</strong><small>Free English MCQ practice</small></span>
+    </div>
+    <p>Built with plain HTML, CSS, and JavaScript for GitHub Pages.</p>
+    <p>© <span id="currentYear"></span> EnglishArena</p>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="question-bank.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
