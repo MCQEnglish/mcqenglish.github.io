@@ -1,0 +1,10 @@
+{
+  "name": "EnglishArena",
+  "short_name": "EnglishArena",
+  "description": "Practical English lessons and free MCQ tests",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#fffdf8",
+  "theme_color": "#12372a",
+  "icons": []
+}

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Create free English grammar and vocabulary MCQ tests with adjustable difficulty, optional timer, instant scoring, and answer explanations.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="theme-color" content="#12372a">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="EnglishArena">
+  <meta property="og:title" content="Free English MCQ Practice Test">
+  <meta property="og:description" content="Create free English grammar and vocabulary MCQ tests with adjustable difficulty, optional timer, instant scoring, and answer explanations.">
+  <title>Free English MCQ Practice Test | EnglishArena</title>
+  <link rel="canonical" href="https://mcqenglish.github.io/quiz.html">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+  
+  
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to content</a>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html" aria-label="EnglishArena home">
+      <span class="brand-mark">EA</span><span><strong>EnglishArena</strong><small>Learn • Practise • Improve</small></span>
+    </a>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="mainNav"><span></span><span></span><span></span><span class="sr-only">Open menu</span></button>
+    <nav class="top-nav" id="mainNav" aria-label="Main navigation"><a href="index.html" class="">Home</a><a href="lessons.html" class="">Lessons</a><a href="quiz.html" class="active">Practice Test</a><a href="about.html" class="">About</a><a class="nav-cta" href="quiz.html">Start Quiz</a></nav>
+  </div>
+</header>
+<main id="main-content"><section class="page-hero compact"><div class="container narrow"><span class="eyebrow">Free practice test</span><h1>Create an English MCQ quiz</h1><p>Choose a category, difficulty level, number of questions, and optional timer. Your score is calculated instantly, and every answer includes a short explanation.</p><button class="button primary" id="heroStartButton" type="button">Choose quiz options</button></div></section>
+<section class="practice-section section" id="practice"><div class="container"><div class="app-shell">
+<section class="screen active" id="setupScreen" aria-labelledby="setupTitle"><div class="setup-grid"><div class="setup-main"><h2 id="setupTitle">Create a new quiz</h2>
+<fieldset class="field-group"><legend>Category</legend><div class="choice-grid category-grid" id="categoryChoices">
+<label class="choice-card selected"><input type="radio" name="category" value="mixed" checked><span class="choice-icon">✦</span><span><strong>Mixed Test</strong><small>All topics together</small></span></label>
+<label class="choice-card"><input type="radio" name="category" value="grammar"><span class="choice-icon">G</span><span><strong>Grammar</strong><small>Usage and structure</small></span></label>
+<label class="choice-card"><input type="radio" name="category" value="vocabulary"><span class="choice-icon">V</span><span><strong>Vocabulary</strong><small>Words and meanings</small></span></label>
+<label class="choice-card"><input type="radio" name="category" value="synonyms"><span class="choice-icon">S</span><span><strong>Synonyms</strong><small>Similar meanings</small></span></label>
+<label class="choice-card"><input type="radio" name="category" value="antonyms"><span class="choice-icon">A</span><span><strong>Antonyms</strong><small>Opposite meanings</small></span></label>
+<label class="choice-card"><input type="radio" name="category" value="spelling"><span class="choice-icon">✎</span><span><strong>Spelling</strong><small>Correct word forms</small></span></label>
+<label class="choice-card"><input type="radio" name="category" value="prepositions"><span class="choice-icon">P</span><span><strong>Prepositions</strong><small>Correct relationships</small></span></label>
+<label class="choice-card"><input type="radio" name="category" value="tenses"><span class="choice-icon">T</span><span><strong>Tenses</strong><small>Time and verb forms</small></span></label>
+</div></fieldset>
+<div class="two-column-fields"><fieldset class="field-group"><legend>Difficulty</legend><div class="segmented-control" id="difficultyChoices"><label><input type="radio" name="difficulty" value="easy" checked><span>Easy</span></label><label><input type="radio" name="difficulty" value="medium"><span>Medium</span></label><label><input type="radio" name="difficulty" value="hard"><span>Hard</span></label></div></fieldset><fieldset class="field-group"><legend>Questions</legend><div class="segmented-control" id="countChoices"><label><input type="radio" name="questionCount" value="10" checked><span>10</span></label><label><input type="radio" name="questionCount" value="20"><span>20</span></label><label><input type="radio" name="questionCount" value="50"><span>50</span></label></div></fieldset></div>
+<fieldset class="field-group"><legend>Timer</legend><div class="segmented-control timer-control" id="timerChoices"><label><input type="radio" name="timer" value="0" checked><span>No timer</span></label><label><input type="radio" name="timer" value="600"><span>10 minutes</span></label><label><input type="radio" name="timer" value="1200"><span>20 minutes</span></label></div></fieldset>
+<button class="button primary full-width" id="startQuizButton" type="button">Generate my quiz</button></div>
+<aside class="setup-summary"><span class="summary-kicker">Progress on this device</span><div class="summary-score"><strong id="savedBestScore">0%</strong><span>Best score</span></div><div class="summary-stats"><div><strong id="savedTests">0</strong><span>Tests completed</span></div><div><strong id="savedAnswered">0</strong><span>Questions answered</span></div></div><p>Scores are saved in this browser only. Clearing site data removes them.</p><button class="danger-button" id="resetProgressButton" type="button">Reset local progress</button></aside></div></section>
+<section class="screen" id="quizScreen" aria-labelledby="questionText"><div class="quiz-toolbar"><button class="text-button" id="quitButton" type="button">← Exit test</button><div class="quiz-meta"><span id="quizCategoryLabel">Mixed Test</span><span id="quizDifficultyLabel">Easy</span></div><div class="timer" id="timerDisplay" aria-live="polite">No timer</div></div><div class="quiz-progress-row"><span id="questionCounter">Question 1 of 10</span><span id="answeredCounter">0 answered</span></div><div class="quiz-progress"><span id="quizProgressBar"></span></div><article class="question-card"><div class="question-topline"><span class="question-type" id="questionType">GRAMMAR</span><button class="icon-button" id="bookmarkButton" type="button" aria-label="Bookmark question">☆</button></div><h2 id="questionText"></h2><div class="question-context hidden" id="questionContext"></div><div class="answer-list" id="answerList"></div></article><div class="quiz-navigation"><button class="button secondary" id="previousButton" type="button">Previous</button><button class="button primary" id="nextButton" type="button">Next</button><button class="button primary hidden" id="submitButton" type="button">Submit test</button></div></section>
+<section class="screen" id="resultScreen" aria-labelledby="resultTitle"><div class="result-header"><span class="eyebrow">Test completed</span><h2 id="resultTitle">Your result</h2><p id="resultMessage">Review your answers and try again.</p></div><div class="result-grid"><div class="score-ring" id="scoreRing"><div><strong id="scorePercentage">0%</strong><span>Final score</span></div></div><div class="result-stat"><strong id="correctCount">0</strong><span>Correct</span></div><div class="result-stat"><strong id="incorrectCount">0</strong><span>Incorrect</span></div><div class="result-stat"><strong id="unansweredCount">0</strong><span>Unanswered</span></div><div class="result-stat"><strong id="timeTaken">0:00</strong><span>Time used</span></div></div><div class="result-actions"><button class="button primary" id="reviewButton" type="button">Review answers</button><button class="button secondary" id="newQuizButton" type="button">Create another quiz</button></div><div class="review-panel hidden" id="reviewPanel"><div class="review-heading"><h3>Answer review</h3><button class="text-button" id="closeReviewButton" type="button">Close review</button></div><div id="reviewList"></div></div></section>
+</div><div class="quiz-note"><h2>How the question bank works</h2><p>The test engine combines curated vocabulary, grammar rules, sentence patterns, and seeded option orders to create many practice variations. Some patterns may repeat. Use the explanations to learn the rule rather than memorising an item number.</p><p>Found a possible error? Include the displayed question ID when you <a href="contact.html">send a correction report</a>.</p></div></div></section><div class="toast" id="toast" role="status" aria-live="polite"></div><button id="headerStartButton" class="visually-hidden-button" type="button" aria-hidden="true" tabindex="-1"></button></main>
+<footer class="site-footer">
+  <div class="footer-grid container">
+    <div><a class="brand footer-brand" href="index.html"><span class="brand-mark">EA</span><span><strong>EnglishArena</strong><small>Practical English lessons and free MCQ tests</small></span></a><p>Independent English-learning resources designed for clear, focused practice. No registration is required.</p></div>
+    <div><h2>Learn</h2><a href="lessons.html">All lessons</a><a href="quiz.html">Practice tests</a><a href="lessons/exam-strategies.html">Exam strategies</a></div>
+    <div><h2>Trust</h2><a href="about.html">About</a><a href="editorial-policy.html">Editorial policy</a><a href="contact.html">Contact</a></div>
+    <div><h2>Legal</h2><a href="privacy.html">Privacy policy</a><a href="terms.html">Terms of use</a><a href="disclaimer.html">Disclaimer</a></div>
+  </div>
+  <div class="footer-bottom container"><p>© <span data-current-year></span> EnglishArena. Educational use permitted under the site terms.</p><p>Built as a fast, accessible static website.</p></div>
+</footer>
+<script src="site.js" defer></script>
+<script src="question-bank.js"></script><script src="app.js"></script>
+</body>
+</html>
